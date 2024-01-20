@@ -1,0 +1,276 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+/* GRID RULES */
+
+.row {
+    clear: both;
+}
+
+.limited {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.column {
+    float: left;
+    padding: 0;
+    margin: 0 0 0;
+}
+
+.small-12 {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* First Page Containers */
+/* .name-BTHSwrapper
+{
+    background: rgb(212, 212, 212);
+    width: 770px;
+    height: 130px;
+    box-shadow: 0px 2px 2px 2px 2px rgba(0, 0, 0, 0.50);
+
+} */
+
+.name-BTHSwrapper {
+    margin-top: 30px;
+}
+
+.name {
+    width: 700px;
+    max-width: 80vw;
+    height: 110px;
+    background-color: #484b51;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.videoContainer {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.videoContainer video {
+    position: fixed;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.GPTIntro {
+    /* max-width: 700px; */
+    /* width: 100%; */
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.introText h1 {
+    margin-top: 25px !important;
+    font-size: 60px;
+    font-weight: 700;
+    max-width: 80vw;
+    margin: auto;
+    text-shadow: 0.5px 0.5px 4px rgba(16, 14, 77, 0.5);
+}
+.introText p {
+    font-size: 25px;
+    font-weight: 500;
+    color: #2a2a2a;
+    max-width: 70vw;
+    margin: 10px auto;
+    text-shadow: 0.5px 0.5px 4px rgba(101, 204, 222, 0.5);
+}
+
+.BTHSwrapper {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    justify-content: center;
+    margin: 20px auto;
+    box-shadow: 4px 4px 4px rgba(16, 14, 77, 0.5);
+}
+
+.BTHSwrapper .title {
+    background: #4aff5c;
+    color: white;
+    line-height: 2.5;
+    letter-spacing: 2px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.BTHSwrapper .BTHSbox {
+    border: 1px solid #efefef;
+    background: white;
+    padding: 10px 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.BTHSwrapper .BTHSbox .item {
+    display: flex;
+    float: left;
+    margin: 10px 0;
+}
+
+.BTHSwrapper .BTHSbox .item .icon {
+    background: #4aff5c;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BTHSwrapper .BTHSbox .item .icon img {
+    width: 50px;
+    height: auto;
+}
+
+.BTHSwrapper .BTHSbox .item .msg {
+    background: #4aff5c;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    /* width: 20vw; */
+    min-width: 85px;
+    margin-left: 10px;
+}
+
+.BTHSwrapper .BTHSbox .item .msg p {
+    float: column;
+    padding: 10px;
+}
+
+.BTHSwrapper .BTHSbox .item.right {
+    
+    float: right;
+}
+
+.BTHSwrapper .BTHSbox .item.right .msg {
+    background: #d8d8d8;
+    color: #333;
+}
+
+.BTHSwrapper .typingArea {
+    background: #d8d8d8;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.BTHSwrapper .typingArea .inputField {
+    width: 100%;
+    display: flex;
+}
+
+/*For knowledge of "input[type="text"], I used https://www.w3schools.com/css/css_form.asp */
+.BTHSwrapper .typingArea .inputField input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding-right: 70px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    transition: 0.3s all ease;
+}
+
+.BTHSwrapper .typingArea .inputField input[type="text"]:focus {
+    border-color: #4aff5c;
+}
+
+.BTHSwrapper .typingArea .inputField input[type="submit"] {
+    height: 40px;
+    margin: 0 10px 0 20px;
+    background: transparent;
+    border: 2px solid #9a9a9a;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 0.3s all ease;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    opacity: 0;
+}
+
+.BTHSwrapper .typingArea .inputField input[type="submit"]:hover,
+.BTHSwrapper .typingArea .inputField input[type="submit"]:focus {
+    background: #4aff5c;
+    color: white;
+    border-color: #4aff5c;
+}
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/:valid for "input:valid ~" */ 
+.BTHSwrapper .typingArea .inputField input:valid ~ input[type="submit"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.msgClear
+{
+    clear: both;
+}
